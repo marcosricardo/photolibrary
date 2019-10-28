@@ -1,1 +1,15 @@
-<app-photos [photos]="photos"></app-photos>
+<div class="text-center mt-3 mb-3 ml-3 d-flex justify-content-center">
+    <form>
+        
+        <input
+            class="rounded form-control"
+            type="search"
+            placeholder="Search..."
+            autofocus
+            (keyup)="filter = $event.target.value"
+            >
+        
+    </form>
+</div>
+
+<app-photos [photos]="photos | filterByDescription: filter"></app-photos>
