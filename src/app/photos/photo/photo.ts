@@ -1,4 +1,4 @@
-export interface photo{
+export interface Photo{
     id:number;
     postDate:Date;
     url:string;

@@ -8,7 +8,7 @@ import { PhotoService } from '../photo/photo.service';
 })
 export class PhotoListComponent implements OnInit {
   photos: Object[] = [];
-
+  
   constructor(private photoService:PhotoService){
   }
   
