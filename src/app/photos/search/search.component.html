@@ -1,0 +1,14 @@
+<div class="text-center mt-3 mb-3 ml-3 d-flex justify-content-center">
+    <form>
+            <div class="col-auto">
+            <div class="input-group mb-2">
+                <div class="input-group-prepend">
+                <div class="input-group-text"> <i aria-hidden="true" class="fa fa-search mr-1"></i>  </div>
+                </div>
+                <input type="text" class="form-control" id="search_field" placeholder="Search..." autofocus
+                (keyup)="debounce.next($event.target.value)">
+            </div>
+            </div>
+    </form>
+</div>
+    
