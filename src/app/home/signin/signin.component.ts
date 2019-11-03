@@ -37,11 +37,11 @@ export class SignInComponent implements OnInit {
                     this.router.navigate(['user', userName]);
                     this.platformDetectorService.isPlatformBrowser() &&
                                 this.userNameInput.nativeElement.focus();
-                    alert('Invalid user name or password');
                 },
                 err => {
                     this.userNameInput.nativeElement.focus();
                     this.loginForm.reset();
+                    alert('Invalid user name or password');
                 }
         );
     }
