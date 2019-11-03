@@ -6,7 +6,7 @@
                 <div class="input-group-text"> <i aria-hidden="true" class="fa fa-search mr-1"></i>  </div>
                 </div>
                 <input type="text" class="form-control" id="search_field" placeholder="Search..." autofocus
-                (keyup)="debounce.next($event.target.value)">
+                (keyup)="debounce.next($event.target.value)" [value]="value">
             </div>
             </div>
     </form>
